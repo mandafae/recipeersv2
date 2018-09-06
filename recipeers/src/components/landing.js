@@ -1,28 +1,17 @@
 import React, { Component } from "react";
+import styled from "styled-components";
+
+const Button = styled.button`
+  border: 1px solid grey;
+`;
 
 class Landing extends Component {
   render() {
     return (
-      <div className="container">
-        <div className="card-container">
-          <div className="card">Login goes here</div>
-        </div>
-        <div className="footer">
-          Photo by{" "}
-          <a
-            href="https://unsplash.com/photos/y1XXWct5rBo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-            target="_blank"
-          >
-            Lee Myungseong
-          </a>{" "}
-          on{" "}
-          <a
-            href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-            target="_blank"
-          >
-            Unsplash
-          </a>
-          .
+      <div className="card-container">
+        <div className="card">
+          <p>Login will go here</p>
+          <Button>Go!</Button>
         </div>
       </div>
     );

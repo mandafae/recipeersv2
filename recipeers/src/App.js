@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import Landing from "./components/landing";
+import Footer from "./components/footer";
 
 class App extends Component {
   state = {
@@ -23,9 +24,9 @@ class App extends Component {
   };
   render() {
     return (
-      <div>
-        <h1>{this.state.response}</h1>
+      <div className="container">
         <Landing />
+        <Footer />
       </div>
     );
   }
